@@ -1,0 +1,81 @@
+t = input ('Введите температуру: ')
+F = (int(t) * 9/5) + 32
+print (F)
+
+
+t = input ('Введите температуру: ')
+F = (int(t) * 9/5) + 32
+print (F)
+
+a = input ('Введите длину: ')
+b = input ('Введите ширину: ')
+c = int(a)*int(b)
+print ('Площадь прямоугольника: ', c)
+
+
+a = 10
+b = 3
+print ('Сложение: ', a+b)
+print ('Вычитание: ', a-b)
+print ('Умножение: ', a*b)
+print ('Деление: ', int(a/b))
+print ('Возведение в степень: ', a**b)
+
+a = input ('Введите слово: ')
+print ('Количество букв: ', len(a))
+
+a = input ('Введите число: ')
+print('четное: ', int(a)%2==0)
+
+a = a = input ('Введите слово: ')
+b = input ('Введите число: ')
+print (a*int(b))
+
+a = input ('Введите минуты: ')
+b = int(a)//60
+c = int(a)%60
+print ('Получилось:', b, 'часа', '', c,'минут')
+
+a = int(input ('Введите число: '))
+b = int(input ('Введите число(еще раз): '))
+c = int(input ('Введите число(еще разочек): '))
+p=(a+b+c)/2
+s=(p*(p-a)*(p-b)*(p-c))**0.5
+print('Формула Герона: ', s)
+print('Четное: ', s%2==0)
+
+
+a = input ('Введите слово ')
+print (a[0:3], a[-3:])
+
+
+a = input ('Введите слово: ')
+print (a[::-1])
+
+
+a = input ('Введите строку: ')
+b = input ('Введите подстроку: ')
+c = int(b in a)
+print ('Да, найдено!'*c)
+
+
+a = "Я люблю Python, Python — лучший!"
+b = a.replace ('Python','JavaScript')
+print(b)
+
+
+a = "apple,banana,orange,grape"
+s = a.split (',')
+print ('\n'.join(s))
+
+
+a = input ('Введите слово: ')
+b = input ('Введите символ: ')
+print ('Символ', b, 'встречается в строке', a.count(b), 'раз')
+
+
+
+a = " Hello, world! "
+b = a.strip() 
+print (b)
+
