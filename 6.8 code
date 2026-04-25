@@ -2,7 +2,6 @@ t = input ('Введите температуру: ')
 F = (int(t) * 9/5) + 32
 print (F)
 
-
 t = input ('Введите температуру: ')
 F = (int(t) * 9/5) + 32
 print (F)
@@ -11,7 +10,6 @@ a = input ('Введите длину: ')
 b = input ('Введите ширину: ')
 c = int(a)*int(b)
 print ('Площадь прямоугольника: ', c)
-
 
 a = 10
 b = 3
@@ -44,38 +42,49 @@ s=(p*(p-a)*(p-b)*(p-c))**0.5
 print('Формула Герона: ', s)
 print('Четное: ', s%2==0)
 
-
 a = input ('Введите слово ')
 print (a[0:3], a[-3:])
 
-
 a = input ('Введите слово: ')
 print (a[::-1])
-
 
 a = input ('Введите строку: ')
 b = input ('Введите подстроку: ')
 c = int(b in a)
 print ('Да, найдено!'*c)
 
-
 a = "Я люблю Python, Python — лучший!"
 b = a.replace ('Python','JavaScript')
 print(b)
-
 
 a = "apple,banana,orange,grape"
 s = a.split (',')
 print ('\n'.join(s))
 
-
 a = input ('Введите слово: ')
 b = input ('Введите символ: ')
 print ('Символ', b, 'встречается в строке', a.count(b), 'раз')
 
-
-
 a = " Hello, world! "
-b = a.strip() 
-print (b)
+b = a.strip()
+c = ' '.join(b.split()) #делим сплитом над подстроки и клеим пробелом
+print (c)
+
+import re
+a = 'abc123def45gh6'
+b = re.findall(r'\d+', a)
+c = "".join(b)
+print(c)
+
+a = "+71234567890"
+b = f"{a[:2]} ({a[2:5]}) {a[5:8]}-{a[8:10]}-{a[10:]}"
+print(b)
+
+text = input("Введите текст: ")
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+shifted_alphabet = alphabet[1:] + alphabet[:1]
+table = str.maketrans(alphabet, shifted_alphabet) #карта замен
+result = text.translate(table)
+print(result)
+
 
